@@ -1,66 +1,67 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
+    <main
+      style={{
+        minHeight: "100vh",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        padding: "2rem",
+        fontFamily: "system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+      }}
+    >
+      <div style={{ textAlign: "center" }}>
+        <h1 style={{ fontSize: "2rem", marginBottom: "0.5rem" }}>
+          Ruben Cuevas
+        </h1>
+
+        <p style={{ opacity: 0.8, marginBottom: "1.5rem" }}>
+          I work at Amazon in NYC.
+        </p>
+
+        <nav
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "0.75rem",
+            alignItems: "center",
+          }}
+        >
           <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+            href="https://x.com/rubencu_"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noreferrer"
+            style={{ textDecoration: "none", fontSize: "1.05rem" }}
           >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
+            X
           </a>
+
           <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+            href="https://github.com/rubencu"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noreferrer"
+            style={{ textDecoration: "none", fontSize: "1.05rem" }}
           >
-            Documentation
+            GitHub
           </a>
-        </div>
-      </main>
-    </div>
+
+          <a
+            href="https://www.linkedin.com/in/rubencu"
+            target="_blank"
+            rel="noreferrer"
+            style={{ textDecoration: "none", fontSize: "1.05rem" }}
+          >
+            LinkedIn
+          </a>
+
+          <a
+            href="mailto:hi@rubencu.com"
+            style={{ textDecoration: "none", fontSize: "1.05rem" }}
+          >
+            hi@rubencu.com
+          </a>
+        </nav>
+      </div>
+    </main>
   );
 }
