@@ -28,7 +28,7 @@ export default function Home() {
           }}
         >
           <a
-            href="https://x.com/rubencu_"
+            href="https://x.com/rubencu"
             target="_blank"
             rel="noreferrer"
             style={{ textDecoration: "none", fontSize: "1.05rem" }}
